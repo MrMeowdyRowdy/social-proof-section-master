@@ -119,13 +119,16 @@ $ffamily: 'League Spartan', sans-serif;
 .textrbox{
     background-color: $textcolor;
     width: 100%;
-    padding: 5px 4%;
+    padding: 3% 4%;
     border-radius: 9px;
     display:flex;
-    gap: 20%;
+    gap: 10%;
     flex-direction: row;
     align-items: center;
     justify-content: start;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .textoblanco{
@@ -138,6 +141,19 @@ $ffamily: 'League Spartan', sans-serif;
 .imagen{
     border-radius: 50%;
     max-width: 50px;
+}
+
+.descpersona{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+
+.textorosa{
+    color: hsl(333, 80%, 67%);
+    font-family: $ffamily;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 1080px) {
