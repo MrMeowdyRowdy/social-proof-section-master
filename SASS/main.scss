@@ -1,0 +1,106 @@
+/* Define standard variables and values for website */
+$bgcolor: white;
+$textcolor: hsl(300, 43%, 22%);
+$fontsize: 15px;
+$primary: white;
+$ffamily: 'League Spartan', sans-serif;
+/* Use the variables */
+*{
+    box-sizing: border-box;
+}
+
+.svgtop { 
+	position: absolute;
+    background-position: left top;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.svgbot { 
+	position: absolute;
+    background-position: right bottom;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+.titulo{
+    color: $textcolor;
+    font-size: 4rem;
+    font-family: $ffamily;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+}
+.descripcion{
+    color: $textcolor;
+    font-size: 1.25rem;
+    font-family: $ffamily;
+    font-weight: 500;
+    line-height: 137%;
+}
+.ratingscontainer{
+    float: left;
+    margin-top: 8.5%;
+    width: 52%;
+    height: auto;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
+}
+
+.contenido{
+    float: left;
+    padding: 4% 10%;
+    width: 48%;
+}
+
+.rating{
+    background-color: hsl(331, 40%, 90%);
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+    border-radius: 9px;
+    display:flex;
+    gap: 25%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratingtext{
+    font-family: $ffamily;
+    font-weight: 700;
+    color: $textcolor;
+    font-size: 1.15rem;
+}
+
+.estrellas{
+    display: flex;
+    gap: 20%;
+
+}
+  
+.checked{
+  color: orange;
+}
+
+.padr1{
+    
+}
+
+@media only screen and (max-width: 1080px) {
+    /* For mobile phones: */
+    .contenido, .ratingscontainer, .rating {
+      width: 100%;
+    }
+
+    
+}
