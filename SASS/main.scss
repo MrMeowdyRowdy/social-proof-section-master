@@ -124,10 +124,8 @@ $ffamily: 'League Spartan', sans-serif;
     display:flex;
     gap: 10%;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: start;
-    flex-basis: 50%;
-    flex-grow: 1;
     flex-wrap: wrap;
 }
 
@@ -136,6 +134,7 @@ $ffamily: 'League Spartan', sans-serif;
     font-weight: 700;
     color: $bgcolor;
     font-size: 1.15rem;
+    
 }
 
 .imagen{
@@ -146,7 +145,8 @@ $ffamily: 'League Spartan', sans-serif;
 .descpersona{
     display: flex;
     flex-direction: column;
-    height: 50px;
+    max-height: min-content;
+    line-height: 0%;
 }
 
 
@@ -193,5 +193,17 @@ $ffamily: 'League Spartan', sans-serif;
     .svgbot, .svgtop{
         width: 50%;
         height: 50%;
+    }
+
+    .textratingcontainer{
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .textrbox{
+        width: 100%;
+        padding: 10% 10%;
     }
 }
